@@ -1,0 +1,17 @@
+.inputFilter {
+  display: flex;
+  width: 300px;
+
+  background-image: url('../../images/search.png');
+  background-position: 10px 8px;
+  background-repeat: no-repeat;
+  background-size: 26px;
+
+  font-size: 16px;
+  padding: 10px 20px 10px 40px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+}
