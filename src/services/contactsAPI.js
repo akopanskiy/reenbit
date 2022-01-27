@@ -1,25 +1,24 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:3000/';
+axios.defaults.baseURL = 'https://server-kopa.herokuapp.com';
 const URLNorris = 'https://api.chucknorris.io/jokes/random';
 
 export const fetchAllContacts = () => {
-  return axios.get(`${URL}contacts`);
+  return axios.get(`/contacts`);
 };
 
 export const fetchContactById = id => {
-  return axios.get(`${URL}contacts/${id}`)
+  return axios.get(`/contacts/${id}`)
 };
 
 export const fetchAddMessage = message => {
-  return axios.post(`${URL}messages`, message)
+  return axios.post(`/messages`, message)
 };
 
 export const fetchAllMessages = () => {
-  return axios.get(`${URL}messages`)
+  return axios.get(`/messages`)
 };
 
 export const fetchChuckNorris = () => {
   return axios.get(`${URLNorris}`)
 };
-

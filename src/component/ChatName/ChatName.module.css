@@ -7,8 +7,9 @@
   background: #f5f5f5;
 }
 .userAvatar {
-  width: 100px;
-  height: 100px;
+  position: relative;
+  width: 105px;
+  height: 105px;
   margin-left: 15px;
   margin-bottom: 5px;
   border-radius: 50%;
@@ -19,4 +20,11 @@
   margin-left: 15px;
   font-size: 25px;
   color: rgb(44, 39, 39);
+}
+.tickImg {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 12vh;
+  right: 61vw;
 }
